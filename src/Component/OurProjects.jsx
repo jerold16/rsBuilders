@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from 'react-slick';
 
 const OurProjects = ({ color, color1 }) => {
+    let [hovered, setHovered] = useState(-1)
     var settings = {
         dots: false,
         arrows: false,
@@ -43,17 +44,17 @@ const OurProjects = ({ color, color1 }) => {
     let data = [
         {
             img: '../Assets/commercial.jpg',
-            title: 'Commercial Construction',
+            title: 'Commercial House(2BHK) ',
             content: 'Functional spaces designed to welcome customers and support your business success every day.',
         },
         {
             img: '../Assets/roofing.jpg',
-            title: 'Roofing',
+            title: 'Economical House (2BHK) ',
             content: `Turn your current space into something new with fresh designs, personalized to your lifestyle.`
         },
         {
             img: '../Assets/pillareva.jpg',
-            title: 'Pillar Work',
+            title: 'Store Renovation',
             content: `Build a home that’s kind to the planet, using eco-friendly materials and energy-saving designs.`
         },
         {
@@ -73,15 +74,19 @@ const OurProjects = ({ color, color1 }) => {
                 </p>
                 <Slider {...settings} className=' py-4 my-4 ' >
                     {
-                        data.map((obj) => (
-                            <div className='relative h-[30rem]  rounded-xl overflow-hidden ' >
-                                <img src={obj.img} className='rounded hover:scale-102 h-[30rem] object-cover  ' alt="Service Image" />
-                                <div className='p-3 text-slate-200 absolute top-0 h-full flex flex-col justify-end w-full bg-slate-900/30 ' >
-
-                                    <h5 className={`fw-semibold text-2xl py-3 pb-2 poppins `} >{obj.title} </h5>
-                                    <p className={`inter line-clamp-3  `} >
-                                        {obj.content}
-                                    </p>
+                        data.map((obj, index) => (
+                            <div onMouseEnter={() => setHovered(index)}
+                                onMouseLeave={() => setHovered(-1)}
+                                className='relative h-[30rem]  rounded-xl overflow-hidden ' >
+                                <img src={obj.img} className={` ${hovered==index?'scale-[1.06] ':''} duration-500 rounded hover:scale-102 h-[30rem] object-cover  `} alt="Service Image" />
+                                <div className='p-3 text-slate-200 absolute top-0 h-full 
+                                flex flex-col justify-end w-full bg-slate-900/40 ' >
+                                    <div className=' min-h-[12rem] ' >
+                                        <h5 className={`fw-semibold text-2xl py-3 pb-2 poppins `} >{obj.title} </h5>
+                                        <p className={`inter line-clamp-3  `} >
+                                            {obj.content}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         ))

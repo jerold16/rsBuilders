@@ -85,8 +85,26 @@ const Home = () => {
       </main>
       <OurProjects color={color1} color1={color} />
       {/* Contact */}
-      <main className=' ' id='contact' >
+      <main className='relative min-h-[50vh] overflow-hidden ' id='contact' >
+        <img src={require('../Assets/planstech.jpg')} alt="Plans Tech" className='absolute w-full h-full object-cover ' />
+        <div className='bg-slate-900/40 absolute h-full top-0 w-full ' ></div>
+        <div className='container relative mx-auto  min-h-[50vh] ' >
+          <section className={` col-lg-6 bg-[${color}] flex min-h-[50vh] text-slate-200 p-4 `} >
+            <div className='my-auto ' >
+              <h2 className=' poppins text-2xl sm:text-4xl lg:text-6xl ' > Have Any Project   With Us ? </h2>
+              <hr className='w-[20%] opacity-70 border-2 ' />
+              <p className='inter w-[80%] my-4 text-sm ' >
+                Nunc varius ipsum sed ultricies scelerisque. Vivamus posuere
+                venenatis orci et vehicula. Aliqu id rhoncus neque, eu fermentum sem. Maecenas ac.
+              </p>
+              <a href='tel:+919715048331' target='_blank'
+                className={` p-2 px-3 rounded-sm bg-slate-200 text-[${color}] text-decoration-none my-4 inter fw-medium  `}>
+                Contact Us
+              </a>
+            </div>
+          </section>
 
+        </div>
       </main>
       {/* Footer */}
       <Footer txtclr={color} />

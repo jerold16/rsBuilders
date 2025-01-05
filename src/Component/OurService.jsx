@@ -1,7 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick';
 
-const OurService = ({ color ,color1}) => {
+const OurService = ({ color, color1 }) => {
     var settings = {
         dots: false,
         arrows: false,
@@ -41,6 +41,8 @@ const OurService = ({ color ,color1}) => {
         ]
     };
     let data = [
+      
+
         {
             img: '../Assets/commercial.jpg',
             title: 'Commercial Construction',
@@ -63,7 +65,7 @@ const OurService = ({ color ,color1}) => {
         },
     ]
     return (
-        <div id='service' className='bg-slate-100 min-h-[60vh] lg:min-h-[100vh] flex ' >
+        <div id='service' className='bg-slate-100 py-4 min-h-[60vh] lg:min-h-[100vh] flex ' >
             <main className=' container m-auto ' >
                 <h2 className={` poppins tracking-wider uppercase text-xl text-[${color}] `} > Our Service </h2>
                 <p className='poppins text-3xl sm:text-5xl fw-semibold ' > What we do </p>
@@ -72,10 +74,11 @@ const OurService = ({ color ,color1}) => {
                         data.map((obj) => (
                             <div>
                                 <img src={obj.img} className='rounded hover:scale-102 ' alt="Service Image" />
-                                <h5 className={` text-[${color1}] py-3 pb-2 poppins `} >{obj.title} </h5>
-                                <p className={`inter line-clamp-3  `} >
-                                    {obj.content}
-                                </p>
+                               
+                                    <h5 className={` text-[${color1}] py-3 pb-2 poppins `} >{obj.title} </h5>
+                                    <p className={`inter line-clamp-3  `} >
+                                        {obj.content}
+                                    </p>
                             </div>
                         ))
                     }
