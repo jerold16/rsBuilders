@@ -51,11 +51,11 @@ const Footer = ({ txtclr }) => {
                         Thirucengode (TK), Namakkal (DT) - 637 205 </a>
                 </section>
                 <hr className=' w-[90%] mx-auto my-3 opacity-60 ' />
-                <div className='w-[90%] mx-auto py-1 flex-wrap flex justify-between items-center ' >
+                <div className='w-[90%] mx-auto py-1 flex-wrap gap-2 flex justify-between items-center ' >
                     <button className=' poppins fw-medium ' >
                         Copyright © 2024 RS.Builders All Rights Reserved.
                     </button>
-                    <div className='flex items-center gap-2 ' >
+                    <div className='flex items-center justify-center mx-sm-0 mx-auto gap-2 ' >
                         <a href="" className='p-2 border-[1px] hover:bg-slate-100 text-slate-800 hover:scale-[1.05] duration-500 border-slate-800 rounded-full ' >
                             <InstagramIcon />
                         </a>
