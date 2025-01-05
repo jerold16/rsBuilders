@@ -64,7 +64,7 @@ const OurProjects = ({ color, color1 }) => {
         },
     ]
     return (
-        <div id='service' className='bg-blue-50 min-h-[60vh] py-5 lg:min-h-[100vh] flex ' >
+        <div id='project' className='bg-blue-50 min-h-[60vh] py-5 lg:min-h-[100vh] flex ' >
             <main className=' container m-auto ' >
                 <h2 className={` poppins tracking-wider text-center uppercase text-xl text-[${color1}] fw-semibold `} > Our Projects </h2>
                 <p className='poppins text-3xl sm:text-5xl text-center fw-semibold my-3' >
