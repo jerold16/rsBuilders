@@ -3,6 +3,9 @@ import RightArrow from '../SvgIcon/RightArrow'
 import CallIcon from '../SvgIcon/CallIcon'
 import MailIcon from '../SvgIcon/MailIcon'
 import AddressIcon from '../SvgIcon/AddressIcon'
+import InstagramIcon from '../SvgIcon/InstagramIcon'
+import TwitterIcon from '../SvgIcon/TwitterIcon'
+import FaceBookIcon from '../SvgIcon/FaceBookIcon'
 
 const Footer = ({ txtclr }) => {
     return (
@@ -47,6 +50,23 @@ const Footer = ({ txtclr }) => {
                         <span className={` text-[${txtclr}] `} > <AddressIcon /></span> Kumaramangalam,
                         Thirucengode (TK), Namakkal (DT) - 637 205 </a>
                 </section>
+                <hr className=' w-[90%] mx-auto my-3 opacity-60 ' />
+                <div className='w-[90%] mx-auto py-1 flex-wrap flex justify-between items-center ' >
+                    <button className=' poppins fw-medium ' >
+                        Copyright © 2024 RS.Builders All Rights Reserved.
+                    </button>
+                    <div className='flex items-center gap-2 ' >
+                        <a href="" className='p-2 border-[1px] hover:bg-slate-100 text-slate-800 hover:scale-[1.05] duration-500 border-slate-800 rounded-full ' >
+                            <InstagramIcon />
+                        </a>
+                        <a href="" className='p-2 border-[1px] hover:bg-slate-100 text-slate-800 hover:scale-[1.05] duration-500 border-slate-800 rounded-full ' >
+                            <TwitterIcon />
+                        </a>
+                        <a href="" className='p-2 border-[1px] hover:bg-slate-100 text-slate-800 hover:scale-[1.05] duration-500 border-slate-800 rounded-full ' >
+                            <FaceBookIcon />
+                        </a>
+                    </div>
+                </div>
                 <hr className=' w-[90%] mx-auto my-3 opacity-60 ' />
             </main>
         </div>

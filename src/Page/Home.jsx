@@ -5,6 +5,7 @@ import OurService from '../Component/OurService'
 import ClockIcon from '../SvgIcon/ClockIcon'
 import WalletIcon from '../SvgIcon/WalletIcon'
 import Footer from '../Component/Footer'
+import OurProjects from '../Component/OurProjects'
 
 const Home = () => {
   let color = 'rgb(15,56,97)'
@@ -82,6 +83,7 @@ const Home = () => {
           </section>
         </article>
       </main>
+      <OurProjects color={color1} color1={color} />
       {/* Contact */}
       <main className=' ' id='contact' >
 
