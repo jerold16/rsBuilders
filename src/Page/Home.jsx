@@ -22,12 +22,11 @@ const Home = () => {
           <article className='col-lg-6 m-auto ' >
             <h2 className={` poppins text-3xl sm:text-4xl text-[${color}] `} >About Us </h2>
             <p className='poppins text-4xl sm:text-5xl my-4 text-slate-800 sm:leading-[120%] ' >
-              Crafting structures that
-              last a lifetime
+              Building Excellence with Every Brick We Lay
             </p>
             <p className='inter leading-[170%] ' >
-              Crafting structures that last a lifetime requires a holistic approach that integrates advanced materials, resilient design,
-              regular maintenance, and sustainability practices. By learning from historical examples and leveraging modern technology.
+              We create spaces that last a lifetime, using high-quality materials and expert craftsmanship. At RS Builders,
+              every project reflects our dedication to precision, resilience, and excellence, ensuring your vision becomes a solid reality.
             </p>
             <a href='tel:+919715048331' className={`text-decoration-none w-fit flex items-center gap-3 my-4 bg-[${color}] p-3 rounded text-slate-100 fw-semibold `} >
               Get a Quote
@@ -43,12 +42,11 @@ const Home = () => {
         <article className='row container  m-auto items-center ' >
           <section className=' col-lg-7  ' >
             <h2 className={` text-3xl sm:text-4xl poppins text-[${color1}] `} > Why Choose us </h2>
-            <h5 className={`my-4 text-5xl sm:text-6xl poppins text-slate-200 `} > Manage construction properly </h5>
+            <h5 className={`my-4 text-4xl sm:text-5xl poppins text-slate-200 `} >Turning Raw Concepts into Concrete Masterpieces </h5>
             <hr className=' w-[20%] opacity-100 my-4 border-2  border-slate-200 ' />
 
             <p className=' inter my-4 text-slate-200 ' >
-              Nunc varius ipsum sed ultricies scelerisque.
-              Vivamus posuere venenatis orci et vehicula. Aliqu id rhoncus neque, eu fermentum sem. Maecenas ac.
+              We combine creativity, expertise, and dedication to ensure every project reflects the highest standards of quality!
             </p>
             {/* First point */}
             <div className='flex gap-2 items-start my-3 ' >
@@ -56,10 +54,10 @@ const Home = () => {
                 <ClockIcon size={20} />
               </span>
               <div className='  ' >
-                <h4 className={` poppins sm:text-4xl text-2xl  text-[${color1}] `} > Speed Builder </h4>
+                <h4 className={` poppins sm:text-4xl text-2xl  text-[${color1}] `} > Professional Craftsmanship </h4>
                 <p className='text-slate-300 inter my-3 text-sm ' >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu
-                  odio quis turpis elementum condimentum ut sed lectus.
+                  Our skilled team uses only top-quality materials and techniques to
+                  ensure your project lasts a lifetime through sustainable designs.
                 </p>
               </div>
             </div>
@@ -69,10 +67,10 @@ const Home = () => {
                 <WalletIcon size={20} />
               </span>
               <div className='  ' >
-                <h4 className={` poppins sm:text-4xl text-2xl  text-[${color1}] `} > Affordable Price </h4>
+                <h4 className={` poppins sm:text-4xl text-2xl  text-[${color1}] `} > Affordable Solutions </h4>
                 <p className='text-slate-300 inter my-3 text-sm ' >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu
-                  odio quis turpis elementum condimentum ut sed lectus.
+                  We offer cost-effective construction services without compromising
+                  on quality, making your dream project more achievable.
                 </p>
               </div>
             </div>
@@ -91,11 +89,11 @@ const Home = () => {
         <div className='container relative mx-auto  min-h-[50vh] ' >
           <section className={` col-lg-6 bg-[${color}] flex min-h-[50vh] text-slate-200 p-4 `} >
             <div className='my-auto ' >
-              <h2 className=' poppins text-2xl sm:text-4xl lg:text-6xl ' > Have Any Project   With Us ? </h2>
+              <h2 className=' poppins text-2xl sm:text-4xl lg:text-6xl ' > Have a project in mind? </h2>
               <hr className='w-[20%] opacity-70 border-2 ' />
               <p className='inter w-[80%] my-4 text-sm ' >
-                Nunc varius ipsum sed ultricies scelerisque. Vivamus posuere
-                venenatis orci et vehicula. Aliqu id rhoncus neque, eu fermentum sem. Maecenas ac.
+                Your dream project is just one call away! Reach out now,
+                let us know your requirements, and our team will handle the rest.
               </p>
               <a href='tel:+919715048331' target='_blank'
                 className={` p-2 px-3 rounded-sm bg-slate-200 text-[${color}] text-decoration-none my-4 inter fw-medium  `}>

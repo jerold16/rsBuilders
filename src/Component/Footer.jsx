@@ -15,7 +15,8 @@ const Footer = ({ txtclr }) => {
                     <img src={require('../Assets/rsbuildersLogo.png')} alt="RSBuilders Logo"
                         className=' w-[] ' width={180} />
                     <p className='inter my-3 sm:w-[80%] ' >
-                        Our post-construction services gives you peace of mind knowing that we are still here for you even after.
+                        Get the best value for your investment with cost-effective
+                        construction solutions that don’t compromise on quality or safety.
                     </p>
                 </section>
                 <section className=' col-6 col-lg-4 ' >

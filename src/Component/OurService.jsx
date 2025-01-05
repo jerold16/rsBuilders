@@ -46,29 +46,49 @@ const OurService = ({ color, color1 }) => {
         {
             img: '../Assets/commercial.jpg',
             title: 'Commercial Construction',
-            content: 'Functional spaces designed to welcome customers and support your business success every day.',
+            content: 'From offices to retail spaces, we build commercial structures that combine strength, style, and functionality.',
         },
         {
             img: '../Assets/roofing.jpg',
             title: 'Roofing',
-            content: `Turn your current space into something new with fresh designs, personalized to your lifestyle.`
+            content: `We offer reliable roofing solutions that protect your property, using top-grade materials for lasting results.`
         },
         {
             img: '../Assets/pillareva.jpg',
             title: 'Pillar Work',
-            content: `Build a home that’s kind to the planet, using eco-friendly materials and energy-saving designs.`
+            content: `Strong, durable pillars are the backbone of every project, which are crafted to ensure stability and support.`
         },
         {
             img: '../Assets/planning.jpg',
-            title: 'Planning',
-            content: `Enhance your home’s outdoor area, creating a beautiful space for relaxation and play.`
+            title: 'Planning & Design',
+            content: `We collaborate with you to create thoughtful, functional 
+            designs that reflect your vision in the projects we deliver.`
         },
+
+
+
+        {
+            img: '../Assets/residentalservice.jpg',
+            title: 'Residential Construction',
+            content: `We build homes that are safe, comfortable, and personalized to meet the needs of every family.`
+        },
+        {
+            img: '../Assets/renovationservice.jpg',
+            title: 'Renovations & Extensions',
+            content: `Whether upgrading a room or expanding your space, we bring new life to existing structures with care.`
+        },
+        {
+            img: '../Assets/interiorservice.jpg',
+            title: 'Interior & Exterior Finishing',
+            content: `From smooth finishes to vibrant exteriors, we perfect every detail for a flawless final look.`
+        },
+
     ]
     return (
         <div id='service' className='bg-slate-100 py-4 min-h-[60vh] lg:min-h-[100vh] flex ' >
             <main className=' container m-auto ' >
                 <h2 className={` poppins tracking-wider uppercase text-xl text-[${color}] `} > Our Service </h2>
-                <p className='poppins text-3xl sm:text-5xl fw-semibold ' > What we do </p>
+                <p className='poppins text-3xl my-3 lg:w-[80%] sm:text-5xl fw-semibold ' >Innovative Solutions for Every Construction Challenge </p>
                 <Slider {...settings} className=' py-4 my-4 ' >
                     {
                         data.map((obj) => (

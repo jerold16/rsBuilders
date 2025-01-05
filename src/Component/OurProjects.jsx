@@ -45,32 +45,32 @@ const OurProjects = ({ color, color1 }) => {
         {
             img: '../Assets/commercial.jpg',
             title: 'Commercial House(2BHK) ',
-            content: 'Functional spaces designed to welcome customers and support your business success every day.',
+            content: 'A modern 2BHK designed for comfort and functionality, creating the perfect environment for both work and relaxation.',
         },
         {
             img: '../Assets/roofing.jpg',
             title: 'Economical House (2BHK) ',
-            content: `Turn your current space into something new with fresh designs, personalized to your lifestyle.`
+            content: `Designed with practicality and affordability in mind, this 2BHK home offers smart use of space for a cozy lifestyle.`
         },
         {
             img: '../Assets/pillareva.jpg',
             title: 'Store Renovation',
-            content: `Build a home that’s kind to the planet, using eco-friendly materials and energy-saving designs.`
+            content: `Revamped stores that blend aesthetics with practicality, providing a fresh look that attracts customers and increases sales.`
         },
         {
             img: '../Assets/planning.jpg',
-            title: 'Planning',
-            content: `Enhance your home’s outdoor area, creating a beautiful space for relaxation and play.`
+            title: 'Planning & Design',
+            content: `Thoughtfully planned spaces, personalized to meet client’s unique needs, setting the foundation for functional and aesthetic structures.`
         },
     ]
     return (
         <div id='service' className='bg-blue-50 min-h-[60vh] py-5 lg:min-h-[100vh] flex ' >
             <main className=' container m-auto ' >
                 <h2 className={` poppins tracking-wider text-center uppercase text-xl text-[${color1}] fw-semibold `} > Our Projects </h2>
-                <p className='poppins text-3xl sm:text-5xl text-center fw-semibold my-3' > Explore our diverse range of projects </p>
+                <p className='poppins text-3xl sm:text-5xl text-center fw-semibold my-3' >
+                    Delivering Projects That Blend Innovation, Durability, & Outstanding Value </p>
                 <p className=' poppins text-slate-600 my-4 w-[80%] lg:w-[60%] mx-auto text-center ' >
-                    We specialize in a wide range of construction services,
-                    including residential, commercial, and industrial projects.
+                Take a look at the spaces we’ve created, each one reflecting our passion for design and construction!
                 </p>
                 <Slider {...settings} className=' py-4 my-4 ' >
                     {
@@ -78,7 +78,7 @@ const OurProjects = ({ color, color1 }) => {
                             <div onMouseEnter={() => setHovered(index)}
                                 onMouseLeave={() => setHovered(-1)}
                                 className='relative h-[30rem]  rounded-xl overflow-hidden ' >
-                                <img src={obj.img} className={` ${hovered==index?'scale-[1.06] ':''} duration-500 rounded hover:scale-102 h-[30rem] object-cover  `} alt="Service Image" />
+                                <img src={obj.img} className={` ${hovered == index ? 'scale-[1.06] ' : ''} duration-500 rounded hover:scale-102 h-[30rem] object-cover  `} alt="Service Image" />
                                 <div className='p-3 text-slate-200 absolute top-0 h-full 
                                 flex flex-col justify-end w-full bg-slate-900/40 ' >
                                     <div className=' min-h-[12rem] ' >
